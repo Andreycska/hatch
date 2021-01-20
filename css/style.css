@@ -398,12 +398,6 @@ p {
     z-index: 1;
 }
 
-/* .menu__name {
-    display: flex;
-    padding-left: 15px;
-    align-items: center;
-} */
-
 .menu__name {
     position: relative;
     cursor: pointer;
@@ -430,6 +424,7 @@ p {
     display: flex;
     margin-top: 34px;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .card__item {
@@ -539,6 +534,7 @@ p {
 
 .photo {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .photo__col {
@@ -568,8 +564,9 @@ p {
 /* MAP */
 
 .map {
-    background: url('../img/resto/map.png') center no-repeat;
+    background: url('../img/resto/map.png') no-repeat;
     background-size: cover;
+    background-position: right 35% bottom 0px;
 }
 
 .map__intro {
@@ -589,6 +586,7 @@ p {
 
 .map__content {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .map__item {
@@ -831,6 +829,11 @@ p {
     font-weight: 400;
 }
 
+.form__input:focus {
+    outline: none;
+    border-color: #e93c3c;
+}
+
 .form__btn {
     position: relative;
 
@@ -871,6 +874,13 @@ p {
     transition: opacity .2s linear;
 }
 
+.form__btn:focus,
+.form__btn:hover {
+    outline: none;
+    border-color: #e93c3c;
+}
+
+
 .form__btn:hover.form__btn:after,
 .form__btn:focus.form__btn::after {
     opacity: 0;
@@ -889,6 +899,33 @@ p {
 
     .soup {
         background-position: right;
+    }
+
+    /* CARD */
+
+    .card__item {
+        flex: 0 1 48%;
+        margin-bottom: 2rem;
+    }
+
+    .card__img {
+        max-width: none;
+    }
+
+    /* MAP */
+
+    .map__item {
+        flex: 1 1 48%;
+    }
+
+    /* FOOTER */
+
+    .footer__iner {
+        flex-direction: column;
+    }
+
+    .footer__item {
+        flex: 1 1 100%;
     }
 }
 
@@ -951,6 +988,90 @@ p {
     .soup__legend {
         padding-right: 100px;
     }
+
+    /* MENU */
+
+    .menu__header {
+        padding: 30px 0 30px;
+    }
+
+    /* PHOTO */
+
+    .photo__col {
+        flex: 1 1 33%;
+    }
+
+    /* MAP */
+
+    .map__item {
+        flex: 1 1 100%;
+    }
+
+    .map__intro {
+        padding: 70px 0 70px;
+    }
+
+    .map__title {
+        margin-bottom: 370px;
+
+        text-align: center;
+    }
+
+    .map__iner {
+        max-width: none;
+    }
+
+    .map__name {
+        margin-bottom: 20px;
+
+        text-align: center;
+    }
+
+    .map__address {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .map__text {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .map__time {
+        justify-content: center;
+    }
+
+    .map__day {
+        margin-right: .5rem;
+    }
+
+    .map__hour {
+        margin-left: .5rem;
+    }
+
+    /* FOOTER */
+
+    .footer {
+        padding: 70px 0;
+    }
+
+    .press__title {
+        margin-bottom: 30px;
+    }
+
+    .press__item {
+        margin-bottom: 30px;
+    }
+
+    .footer__title {
+        margin-bottom: 30px;
+    }
+
+    .socail {
+        margin-bottom: 30px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -989,5 +1110,79 @@ p {
 
     .soup__energy {
         padding-right: 0;
+    }
+
+    /* CARD */
+
+    .card__item {
+        flex: 0 1 100%;
+        margin-bottom: 2rem;
+    }
+
+    .card__photo {
+        margin-bottom: 20px;
+    }
+
+    .card__title {
+        margin-bottom: 20px;
+    }
+
+    .card__content {
+        margin-bottom: 20px;
+    }
+
+    .card__energy {
+        margin-bottom: 20px;
+    }
+
+    /* PHOTO */
+
+    .photo__col {
+        flex: 1 1 50%;
+    }
+    /* MAP */
+
+    .map__intro {
+        position: relative;
+        padding: 30px 0;
+    }
+
+    .map__title {
+        margin-bottom: 445px;
+        font-size: 3rem;
+    }
+
+    .map__iner {
+        padding: 15px;
+    }
+
+    /* FOOTER */
+
+    .footer {
+        padding: 30px 0;
+    }
+
+    .press__title {
+        margin-bottom: 20px;
+        font-size: 3rem;
+    }
+
+    .press__item {
+        margin-bottom: 20px;
+    }
+
+    .footer__title {
+        margin-bottom: 20px;
+    }
+
+    .socail {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 364px) {
+    
+    .form__input {
+        width: 100%;
     }
 }
