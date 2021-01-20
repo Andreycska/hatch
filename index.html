@@ -14,7 +14,7 @@
 
     <!-- HEADER -->
 
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header__iner">
                 <div class="header__logo">
@@ -22,10 +22,10 @@
                 </div>
 
                 <nav class="nav" id="nav">
-                    <a class="nav__link" href="#">Ресторан</a>
-                    <a class="nav__link" href="#">Меню</a>
-                    <a class="nav__link" href="#">Адреса</a>
-                    <a class="nav__link" href="#">Новости</a>
+                    <a class="nav__link" href="#" data-scroll="#photo">Ресторан</a>
+                    <a class="nav__link" href="#" data-scroll="#menu">Меню</a>
+                    <a class="nav__link" href="#" data-scroll="#map">Адреса</a>
+                    <a class="nav__link" href="#" data-scroll="footer">Новости</a>
                 </nav>
 
                 <button class="burger" type="button" id="burger">
@@ -38,7 +38,7 @@
 
     <!-- INTRO -->
 
-    <section class="intro">
+    <section class="intro" id="intro">
         <div class="intro__filter">
             <div class="container">
                 <div class="intro__iner">
@@ -82,7 +82,7 @@
 
     <!-- MENU -->
 
-    <section class="menu">
+    <section class="menu" id="menu">
         <div class="container">
 
             <div class="menu__header">
@@ -93,7 +93,7 @@
             </div><!--/.MENU__HEADER-->
 
             <div class="menu__body">
-                <div class="menu__item">
+                <div class="menu__item" data-collapse="#menu1">
 
                     <div class="menu__name">
                         <div class="menu__icon">
@@ -102,7 +102,7 @@
                         <h3 class="menu__choice">Горячие закуски</h3>
                     </div><!--/.MENU__NAME-->
 
-                    <div class="card">
+                    <div class="card" id="menu1">
 
                         <div class="card__item">
                             <a class="card__photo" href="#">
@@ -156,7 +156,7 @@
 
                 </div><!--/.MENU__ITEM-->
 
-                <div class="menu__item">
+                <div class="menu__item" data-collapse="#menu2">
 
                     <div class="menu__name">
                         <div class="menu__icon">
@@ -165,9 +165,61 @@
                         <h3 class="menu__choice">Пивные закуски</h3>
                     </div><!--/.MENU__NAME-->
 
+                    <div class="card" id="menu2">
+
+                        <div class="card__item">
+                            <a class="card__photo" href="#">
+                                <img class="card__img" src="img/menu/hot appetizers/6.png" alt="appetizers">
+                            </a>
+                            <a class="card__ref" href="#"><h4 class="card__title">Тарелка свежих овощей с чесночно-творожным соусом</h4></a>
+                            <div class="card__content">
+                                <p>Сладкий перец,томаты, огурцы, зеленые перья лука, зелень, стебли сельдерея</p>
+                            </div>
+                            <div class="card__energy">220 г	/ 150 ккал.</div>
+                            <div class="card__price">210, — ₽</div>
+                        </div><!--/.CARD__ITEM-->
+
+                        <div class="card__item">
+                            <a class="card__photo" href="#">
+                                <img class="card__img" src="img/menu/hot appetizers/7.png" alt="appetizers">
+                            </a>
+                            <a class="card__ref" href="#"><h4 class="card__title">Сырные пятачки из собственной сыровани</h4></a>
+                            <div class="card__content">
+                                <p>В пряном масле с вялеными томатами и травами</p>
+                            </div>
+                            <div class="card__energy">220 г	/ 150 ккал.</div>
+                            <div class="card__price">350, — ₽</div>
+                        </div><!--/.CARD__ITEM-->
+
+                        <div class="card__item">
+                            <a class="card__photo" href="#">
+                                <img class="card__img" src="img/menu/hot appetizers/8.png" alt="appetizers">
+                            </a>
+                            <a class="card__ref" href="#"><h4 class="card__title">Сыр из собственной сыроварни</h4></a>
+                            <div class="card__content">
+                                <p>Приготовленный по старинному кавказскому рецепту, подается на пергаменте со сладкой горчицей</p>
+                            </div>
+                            <div class="card__energy">50 г	/ 90 ккал.</div>
+                            <div class="card__price">150, — ₽</div>
+                        </div><!--/.CARD__ITEM-->
+
+                        <div class="card__item">
+                            <a class="card__photo" href="#">
+                                <img class="card__img" src="img/menu/hot appetizers/9.png" alt="appetizers">
+                            </a>
+                            <a class="card__ref" href="#"><h4 class="card__title">Сало трёх видов с хреном и горчицей</h4></a>
+                            <div class="card__content">
+                                <p>Сало в острой перечной обсыпке, с чесноком и сало собственного копчения.</p>
+                            </div>
+                            <div class="card__energy">220 г	/ 150 ккал.</div>
+                            <div class="card__price">270, — ₽</div>
+                        </div><!--/.CARD__ITEM-->
+
+                    </div><!--/.CARD-->
+
                 </div><!--/.MENU__ITEM-->
 
-                <div class="menu__item">
+                <div class="menu__item" data-collapse="#menu3">
 
                     <div class="menu__name">
                         <div class="menu__icon">
@@ -176,9 +228,61 @@
                         <h3 class="menu__choice">Салаты</h3>
                     </div><!--/.MENU__NAME-->
 
+                    <div class="card" id="menu3">
+
+                        <div class="card__item">
+                            <a class="card__photo" href="#">
+                                <img class="card__img" src="img/menu/hot appetizers/6.png" alt="appetizers">
+                            </a>
+                            <a class="card__ref" href="#"><h4 class="card__title">Тарелка свежих овощей с чесночно-творожным соусом</h4></a>
+                            <div class="card__content">
+                                <p>Сладкий перец,томаты, огурцы, зеленые перья лука, зелень, стебли сельдерея</p>
+                            </div>
+                            <div class="card__energy">220 г	/ 150 ккал.</div>
+                            <div class="card__price">210, — ₽</div>
+                        </div><!--/.CARD__ITEM-->
+
+                        <div class="card__item">
+                            <a class="card__photo" href="#">
+                                <img class="card__img" src="img/menu/hot appetizers/7.png" alt="appetizers">
+                            </a>
+                            <a class="card__ref" href="#"><h4 class="card__title">Сырные пятачки из собственной сыровани</h4></a>
+                            <div class="card__content">
+                                <p>В пряном масле с вялеными томатами и травами</p>
+                            </div>
+                            <div class="card__energy">220 г	/ 150 ккал.</div>
+                            <div class="card__price">350, — ₽</div>
+                        </div><!--/.CARD__ITEM-->
+
+                        <div class="card__item">
+                            <a class="card__photo" href="#">
+                                <img class="card__img" src="img/menu/hot appetizers/8.png" alt="appetizers">
+                            </a>
+                            <a class="card__ref" href="#"><h4 class="card__title">Сыр из собственной сыроварни</h4></a>
+                            <div class="card__content">
+                                <p>Приготовленный по старинному кавказскому рецепту, подается на пергаменте со сладкой горчицей</p>
+                            </div>
+                            <div class="card__energy">50 г	/ 90 ккал.</div>
+                            <div class="card__price">150, — ₽</div>
+                        </div><!--/.CARD__ITEM-->
+
+                        <div class="card__item">
+                            <a class="card__photo" href="#">
+                                <img class="card__img" src="img/menu/hot appetizers/9.png" alt="appetizers">
+                            </a>
+                            <a class="card__ref" href="#"><h4 class="card__title">Сало трёх видов с хреном и горчицей</h4></a>
+                            <div class="card__content">
+                                <p>Сало в острой перечной обсыпке, с чесноком и сало собственного копчения.</p>
+                            </div>
+                            <div class="card__energy">220 г	/ 150 ккал.</div>
+                            <div class="card__price">270, — ₽</div>
+                        </div><!--/.CARD__ITEM-->
+
+                    </div><!--/.CARD-->
+
                 </div><!--/.MENU__ITEM-->
 
-                <div class="menu__item">
+                <div class="menu__item" data-collapse="#menu4">
 
                     <div class="menu__name">
                         <div class="menu__icon">
@@ -187,9 +291,61 @@
                         <h3 class="menu__choice">Супы</h3>
                     </div><!--/.MENU__NAME-->
 
+                    <div class="card" id="menu4">
+
+                        <div class="card__item">
+                            <a class="card__photo" href="#">
+                                <img class="card__img" src="img/menu/hot appetizers/6.png" alt="appetizers">
+                            </a>
+                            <a class="card__ref" href="#"><h4 class="card__title">Тарелка свежих овощей с чесночно-творожным соусом</h4></a>
+                            <div class="card__content">
+                                <p>Сладкий перец,томаты, огурцы, зеленые перья лука, зелень, стебли сельдерея</p>
+                            </div>
+                            <div class="card__energy">220 г	/ 150 ккал.</div>
+                            <div class="card__price">210, — ₽</div>
+                        </div><!--/.CARD__ITEM-->
+
+                        <div class="card__item">
+                            <a class="card__photo" href="#">
+                                <img class="card__img" src="img/menu/hot appetizers/7.png" alt="appetizers">
+                            </a>
+                            <a class="card__ref" href="#"><h4 class="card__title">Сырные пятачки из собственной сыровани</h4></a>
+                            <div class="card__content">
+                                <p>В пряном масле с вялеными томатами и травами</p>
+                            </div>
+                            <div class="card__energy">220 г	/ 150 ккал.</div>
+                            <div class="card__price">350, — ₽</div>
+                        </div><!--/.CARD__ITEM-->
+
+                        <div class="card__item">
+                            <a class="card__photo" href="#">
+                                <img class="card__img" src="img/menu/hot appetizers/8.png" alt="appetizers">
+                            </a>
+                            <a class="card__ref" href="#"><h4 class="card__title">Сыр из собственной сыроварни</h4></a>
+                            <div class="card__content">
+                                <p>Приготовленный по старинному кавказскому рецепту, подается на пергаменте со сладкой горчицей</p>
+                            </div>
+                            <div class="card__energy">50 г	/ 90 ккал.</div>
+                            <div class="card__price">150, — ₽</div>
+                        </div><!--/.CARD__ITEM-->
+
+                        <div class="card__item">
+                            <a class="card__photo" href="#">
+                                <img class="card__img" src="img/menu/hot appetizers/9.png" alt="appetizers">
+                            </a>
+                            <a class="card__ref" href="#"><h4 class="card__title">Сало трёх видов с хреном и горчицей</h4></a>
+                            <div class="card__content">
+                                <p>Сало в острой перечной обсыпке, с чесноком и сало собственного копчения.</p>
+                            </div>
+                            <div class="card__energy">220 г	/ 150 ккал.</div>
+                            <div class="card__price">270, — ₽</div>
+                        </div><!--/.CARD__ITEM-->
+
+                    </div><!--/.CARD-->
+
                 </div><!--/.MENU__ITEM-->
 
-                <div class="menu__item">
+                <div class="menu__item" data-collapse="#menu5">
 
                     <div class="menu__name">
                         <div class="menu__icon">
@@ -198,9 +354,61 @@
                         <h3 class="menu__choice">Мясо</h3>
                     </div><!--/.MENU__NAME-->
 
+                    <div class="card" id="menu5">
+
+                        <div class="card__item">
+                            <a class="card__photo" href="#">
+                                <img class="card__img" src="img/menu/hot appetizers/6.png" alt="appetizers">
+                            </a>
+                            <a class="card__ref" href="#"><h4 class="card__title">Тарелка свежих овощей с чесночно-творожным соусом</h4></a>
+                            <div class="card__content">
+                                <p>Сладкий перец,томаты, огурцы, зеленые перья лука, зелень, стебли сельдерея</p>
+                            </div>
+                            <div class="card__energy">220 г	/ 150 ккал.</div>
+                            <div class="card__price">210, — ₽</div>
+                        </div><!--/.CARD__ITEM-->
+
+                        <div class="card__item">
+                            <a class="card__photo" href="#">
+                                <img class="card__img" src="img/menu/hot appetizers/7.png" alt="appetizers">
+                            </a>
+                            <a class="card__ref" href="#"><h4 class="card__title">Сырные пятачки из собственной сыровани</h4></a>
+                            <div class="card__content">
+                                <p>В пряном масле с вялеными томатами и травами</p>
+                            </div>
+                            <div class="card__energy">220 г	/ 150 ккал.</div>
+                            <div class="card__price">350, — ₽</div>
+                        </div><!--/.CARD__ITEM-->
+
+                        <div class="card__item">
+                            <a class="card__photo" href="#">
+                                <img class="card__img" src="img/menu/hot appetizers/8.png" alt="appetizers">
+                            </a>
+                            <a class="card__ref" href="#"><h4 class="card__title">Сыр из собственной сыроварни</h4></a>
+                            <div class="card__content">
+                                <p>Приготовленный по старинному кавказскому рецепту, подается на пергаменте со сладкой горчицей</p>
+                            </div>
+                            <div class="card__energy">50 г	/ 90 ккал.</div>
+                            <div class="card__price">150, — ₽</div>
+                        </div><!--/.CARD__ITEM-->
+
+                        <div class="card__item">
+                            <a class="card__photo" href="#">
+                                <img class="card__img" src="img/menu/hot appetizers/9.png" alt="appetizers">
+                            </a>
+                            <a class="card__ref" href="#"><h4 class="card__title">Сало трёх видов с хреном и горчицей</h4></a>
+                            <div class="card__content">
+                                <p>Сало в острой перечной обсыпке, с чесноком и сало собственного копчения.</p>
+                            </div>
+                            <div class="card__energy">220 г	/ 150 ккал.</div>
+                            <div class="card__price">270, — ₽</div>
+                        </div><!--/.CARD__ITEM-->
+
+                    </div><!--/.CARD-->
+
                 </div><!--/.MENU__ITEM-->
 
-                <div class="menu__item">
+                <div class="menu__item" data-collapse="#menu6">
 
                     <div class="menu__name">
                         <div class="menu__icon">
@@ -209,9 +417,61 @@
                         <h3 class="menu__choice">Гарниры</h3>
                     </div><!--/.MENU__NAME-->
 
+                    <div class="card" id="menu6">
+
+                        <div class="card__item">
+                            <a class="card__photo" href="#">
+                                <img class="card__img" src="img/menu/hot appetizers/6.png" alt="appetizers">
+                            </a>
+                            <a class="card__ref" href="#"><h4 class="card__title">Тарелка свежих овощей с чесночно-творожным соусом</h4></a>
+                            <div class="card__content">
+                                <p>Сладкий перец,томаты, огурцы, зеленые перья лука, зелень, стебли сельдерея</p>
+                            </div>
+                            <div class="card__energy">220 г	/ 150 ккал.</div>
+                            <div class="card__price">210, — ₽</div>
+                        </div><!--/.CARD__ITEM-->
+
+                        <div class="card__item">
+                            <a class="card__photo" href="#">
+                                <img class="card__img" src="img/menu/hot appetizers/7.png" alt="appetizers">
+                            </a>
+                            <a class="card__ref" href="#"><h4 class="card__title">Сырные пятачки из собственной сыровани</h4></a>
+                            <div class="card__content">
+                                <p>В пряном масле с вялеными томатами и травами</p>
+                            </div>
+                            <div class="card__energy">220 г	/ 150 ккал.</div>
+                            <div class="card__price">350, — ₽</div>
+                        </div><!--/.CARD__ITEM-->
+
+                        <div class="card__item">
+                            <a class="card__photo" href="#">
+                                <img class="card__img" src="img/menu/hot appetizers/8.png" alt="appetizers">
+                            </a>
+                            <a class="card__ref" href="#"><h4 class="card__title">Сыр из собственной сыроварни</h4></a>
+                            <div class="card__content">
+                                <p>Приготовленный по старинному кавказскому рецепту, подается на пергаменте со сладкой горчицей</p>
+                            </div>
+                            <div class="card__energy">50 г	/ 90 ккал.</div>
+                            <div class="card__price">150, — ₽</div>
+                        </div><!--/.CARD__ITEM-->
+
+                        <div class="card__item">
+                            <a class="card__photo" href="#">
+                                <img class="card__img" src="img/menu/hot appetizers/9.png" alt="appetizers">
+                            </a>
+                            <a class="card__ref" href="#"><h4 class="card__title">Сало трёх видов с хреном и горчицей</h4></a>
+                            <div class="card__content">
+                                <p>Сало в острой перечной обсыпке, с чесноком и сало собственного копчения.</p>
+                            </div>
+                            <div class="card__energy">220 г	/ 150 ккал.</div>
+                            <div class="card__price">270, — ₽</div>
+                        </div><!--/.CARD__ITEM-->
+
+                    </div><!--/.CARD-->
+
                 </div><!--/.MENU__ITEM-->
 
-                <div class="menu__item">
+                <div class="menu__item" data-collapse="#menu7">
 
                     <div class="menu__name">
                         <div class="menu__icon">
@@ -220,9 +480,61 @@
                         <h3 class="menu__choice">Десерты</h3>
                     </div><!--/.MENU__NAME-->
 
+                    <div class="card" id="menu7">
+
+                        <div class="card__item">
+                            <a class="card__photo" href="#">
+                                <img class="card__img" src="img/menu/hot appetizers/6.png" alt="appetizers">
+                            </a>
+                            <a class="card__ref" href="#"><h4 class="card__title">Тарелка свежих овощей с чесночно-творожным соусом</h4></a>
+                            <div class="card__content">
+                                <p>Сладкий перец,томаты, огурцы, зеленые перья лука, зелень, стебли сельдерея</p>
+                            </div>
+                            <div class="card__energy">220 г	/ 150 ккал.</div>
+                            <div class="card__price">210, — ₽</div>
+                        </div><!--/.CARD__ITEM-->
+
+                        <div class="card__item">
+                            <a class="card__photo" href="#">
+                                <img class="card__img" src="img/menu/hot appetizers/7.png" alt="appetizers">
+                            </a>
+                            <a class="card__ref" href="#"><h4 class="card__title">Сырные пятачки из собственной сыровани</h4></a>
+                            <div class="card__content">
+                                <p>В пряном масле с вялеными томатами и травами</p>
+                            </div>
+                            <div class="card__energy">220 г	/ 150 ккал.</div>
+                            <div class="card__price">350, — ₽</div>
+                        </div><!--/.CARD__ITEM-->
+
+                        <div class="card__item">
+                            <a class="card__photo" href="#">
+                                <img class="card__img" src="img/menu/hot appetizers/8.png" alt="appetizers">
+                            </a>
+                            <a class="card__ref" href="#"><h4 class="card__title">Сыр из собственной сыроварни</h4></a>
+                            <div class="card__content">
+                                <p>Приготовленный по старинному кавказскому рецепту, подается на пергаменте со сладкой горчицей</p>
+                            </div>
+                            <div class="card__energy">50 г	/ 90 ккал.</div>
+                            <div class="card__price">150, — ₽</div>
+                        </div><!--/.CARD__ITEM-->
+
+                        <div class="card__item">
+                            <a class="card__photo" href="#">
+                                <img class="card__img" src="img/menu/hot appetizers/9.png" alt="appetizers">
+                            </a>
+                            <a class="card__ref" href="#"><h4 class="card__title">Сало трёх видов с хреном и горчицей</h4></a>
+                            <div class="card__content">
+                                <p>Сало в острой перечной обсыпке, с чесноком и сало собственного копчения.</p>
+                            </div>
+                            <div class="card__energy">220 г	/ 150 ккал.</div>
+                            <div class="card__price">270, — ₽</div>
+                        </div><!--/.CARD__ITEM-->
+
+                    </div><!--/.CARD-->
+
                 </div><!--/.MENU__ITEM-->
 
-                <div class="menu__item">
+                <div class="menu__item" data-collapse="#menu8">
 
                     <div class="menu__name">
                         <div class="menu__icon">
@@ -230,6 +542,58 @@
                         </div>
                         <h3 class="menu__choice">Напитки</h3>
                     </div><!--/.MENU__NAME-->
+
+                    <div class="card" id="menu8">
+
+                        <div class="card__item">
+                            <a class="card__photo" href="#">
+                                <img class="card__img" src="img/menu/hot appetizers/6.png" alt="appetizers">
+                            </a>
+                            <a class="card__ref" href="#"><h4 class="card__title">Тарелка свежих овощей с чесночно-творожным соусом</h4></a>
+                            <div class="card__content">
+                                <p>Сладкий перец,томаты, огурцы, зеленые перья лука, зелень, стебли сельдерея</p>
+                            </div>
+                            <div class="card__energy">220 г	/ 150 ккал.</div>
+                            <div class="card__price">210, — ₽</div>
+                        </div><!--/.CARD__ITEM-->
+
+                        <div class="card__item">
+                            <a class="card__photo" href="#">
+                                <img class="card__img" src="img/menu/hot appetizers/7.png" alt="appetizers">
+                            </a>
+                            <a class="card__ref" href="#"><h4 class="card__title">Сырные пятачки из собственной сыровани</h4></a>
+                            <div class="card__content">
+                                <p>В пряном масле с вялеными томатами и травами</p>
+                            </div>
+                            <div class="card__energy">220 г	/ 150 ккал.</div>
+                            <div class="card__price">350, — ₽</div>
+                        </div><!--/.CARD__ITEM-->
+
+                        <div class="card__item">
+                            <a class="card__photo" href="#">
+                                <img class="card__img" src="img/menu/hot appetizers/8.png" alt="appetizers">
+                            </a>
+                            <a class="card__ref" href="#"><h4 class="card__title">Сыр из собственной сыроварни</h4></a>
+                            <div class="card__content">
+                                <p>Приготовленный по старинному кавказскому рецепту, подается на пергаменте со сладкой горчицей</p>
+                            </div>
+                            <div class="card__energy">50 г	/ 90 ккал.</div>
+                            <div class="card__price">150, — ₽</div>
+                        </div><!--/.CARD__ITEM-->
+
+                        <div class="card__item">
+                            <a class="card__photo" href="#">
+                                <img class="card__img" src="img/menu/hot appetizers/9.png" alt="appetizers">
+                            </a>
+                            <a class="card__ref" href="#"><h4 class="card__title">Сало трёх видов с хреном и горчицей</h4></a>
+                            <div class="card__content">
+                                <p>Сало в острой перечной обсыпке, с чесноком и сало собственного копчения.</p>
+                            </div>
+                            <div class="card__energy">220 г	/ 150 ккал.</div>
+                            <div class="card__price">270, — ₽</div>
+                        </div><!--/.CARD__ITEM-->
+
+                    </div><!--/.CARD-->
 
                 </div><!--/.MENU__ITEM-->
 
@@ -261,7 +625,7 @@
 
     <!-- PHOTO -->
 
-    <div class="photo">
+    <div class="photo" id="photo">
         <div class="photo__col">
             <div class="photo__item">
                 <img class="photo__img" src="img/resto/photo-bar/2.png" alt="">
@@ -296,7 +660,7 @@
 
     <!-- MAP -->
 
-    <section class="map">
+    <section class="map" id="map">
         <div class="container">
             <div class="map__intro">
 
@@ -373,7 +737,7 @@
         </div><!--/.CONTAINER-->
     </section><!--/.MAP-->
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="container">
             <div class="footer__iner">
 

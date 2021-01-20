@@ -53,6 +53,14 @@ p {
     position: relative;
 }
 
+.header.fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+}
+
 .header::after {
     content: "";
     width: 100%;
@@ -384,6 +392,10 @@ p {
     position: relative;
 }
 
+.menu__item.active .card {
+    display: flex;
+}
+
 .menu__item::after {
     content: "";
     display: block;
@@ -421,7 +433,7 @@ p {
 /* CARD */
 
 .card {
-    display: flex;
+    display: none;
     margin-top: 34px;
     justify-content: space-between;
     flex-wrap: wrap;
